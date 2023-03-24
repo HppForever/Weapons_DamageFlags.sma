@@ -1,0 +1,19 @@
+Требований к плагину нету, кроме обычного AMXX любой версии
+
+Настройки исходника:
+
+    #define VipPlus_Flags ADMIN_LEVEL_A         // Флаг випа+
+    #define Vip_Flags ADMIN_LEVEL_H            // Флаг випа
+    #define OtherFlags ADMIN_LEVEL_B || get_user_flags(attacker) & ADMIN_LEVEL_D // Остальные флаги
+
+    #define Multiplier_VipPlusDamage 1.25    // Множитель урона для випа+ (25%)
+    #define Multiplier_VipDamage 1.15       // Множитель урона для випа (15%)
+    #define Multiplier_OtherDamage 1.30    // Множитель урона для остальных привилегий (30%)
+
+Установка:
+    
+    1) Настраиваем исходник под себя и сохраняем изменения
+    2) Компилируем Weapons_DamageFlags.sma в любом онлайн или локальном компиляторе AMXX версии 1.8.1 - 1.8.3
+    3) Перекидываем Weapons_DamageFlags.amxx в папку /addons/amxmodx/plugins
+    4) Заходим в plugins.ini (/addons/amxmodx/configs) и вставляем строчку Weapons_DamageFlags.amxx
+    5) Перезапускаем сервер или меняем карту
