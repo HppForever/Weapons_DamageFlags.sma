@@ -2,8 +2,8 @@
 
 Настройки исходника:
 
-    #define VipPlus_Flags ADMIN_LEVEL_A         // Флаг випа+
-    #define Vip_Flags ADMIN_LEVEL_H            // Флаг випа
+    #define VipPlus_Flags ADMIN_LEVEL_A          // Флаг випа+
+    #define Vip_Flags ADMIN_LEVEL_H             // Флаг випа
     #define OtherFlags ADMIN_LEVEL_B || get_user_flags(attacker) & ADMIN_LEVEL_D // Остальные флаги
 
     #define Multiplier_VipPlusDamage 1.25    // Множитель урона для випа+ (25%)
